@@ -333,14 +333,15 @@ header{
   margin-bottom:26px;
 }
 .day-head{
-  display:flex;flex-wrap:wrap;align-items:center;gap:14px;justify-content:space-between;
-  margin-bottom:26px;padding-bottom:22px;border-bottom:1px solid rgba(255,255,255,.12);
+  background:var(--pink);border-radius:14px;
+  padding:20px 26px;margin-bottom:26px;
+  display:flex;flex-direction:column;gap:6px;
 }
-.day-when{color:var(--eyebrow);font-weight:800;letter-spacing:.03em;}
 .day-tag{
-  background:var(--pink);color:#fff;font-weight:800;font-size:.78rem;letter-spacing:.08em;
-  text-transform:uppercase;padding:8px 16px;border-radius:8px;
+  color:#fff;font-weight:800;font-size:1.1rem;letter-spacing:.02em;
+  text-transform:uppercase;
 }
+.day-when{color:rgba(255,255,255,.92);font-weight:700;font-size:.92rem;letter-spacing:.02em;}
 .day-items{display:flex;flex-direction:column;gap:14px;}
 .day-item{
   background:#fff;color:var(--ink);border-radius:14px;padding:20px 22px;
@@ -603,8 +604,8 @@ footer a{color:rgba(255,255,255,.85);}
 
     <div class="day">
       <div class="day-head">
-        <div class="day-when">10 сентября (четверг) · 18:00 МСК</div>
         <div class="day-tag">Обучение</div>
+        <div class="day-when">10 сентября (четверг) · 18:00 МСК</div>
       </div>
       <div class="day-items">
         <div class="day-item"><div class="idx">1</div><div class="body">Система роста через управление гипотезами</div></div>
@@ -656,8 +657,8 @@ footer a{color:rgba(255,255,255,.85);}
   <div class="wrap">
     <div class="day">
       <div class="day-head">
-        <div class="day-when">12 сентября (суббота) · 10:00 МСК</div>
         <div class="day-tag">Практика с Ольгой Грищенко</div>
+        <div class="day-when">12 сентября (суббота) · 10:00 МСК</div>
       </div>
       <div class="day-items">
         <div class="day-item"><div class="idx">1</div><div class="body">С каждым из участников Ольга Грищенко обсудит конкретные идеи для роста дохода и стратегии по внедрению идеи с минимальными рисками и затратами.</div></div>
