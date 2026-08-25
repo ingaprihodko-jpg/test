@@ -251,28 +251,57 @@ header{
   background:linear-gradient(180deg,var(--purple-950) 0%,var(--purple-900) 100%);
   color:#fff;
 }
-.why .h2{text-align:center;margin-bottom:40px;}
-.why .h2.exact-case{text-transform:none;}
+.why-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start;}
+.why-heading{text-align:left;text-transform:none;margin-bottom:28px;line-height:1.15;}
 .flow{
-  max-width:760px;margin:0 auto;
-  display:flex;flex-direction:column;align-items:center;gap:0;
+  display:flex;flex-direction:column;align-items:stretch;gap:0;
 }
 .flow-step{
   width:100%;
   background:var(--card);color:var(--ink);
-  border-radius:16px;padding:26px 30px;text-align:left;
-  font-size:1rem;line-height:1.7;
+  border-radius:16px;padding:22px 26px;text-align:left;
+  font-size:.96rem;line-height:1.65;
   box-shadow:0 14px 30px rgba(0,0,0,.25);
 }
-.flow-arrow{color:var(--pink);font-size:1.6rem;line-height:1;padding:10px 0;}
-.flow .btn{margin-top:10px;}
+.flow-arrow{color:var(--pink);font-size:1.6rem;line-height:1;padding:8px 0;}
+.flow .btn{margin-top:10px;align-self:flex-start;}
+.why-art{
+  position:sticky;top:100px;
+  aspect-ratio:3/4;border-radius:24px;overflow:hidden;
+  background:radial-gradient(circle at 60% 20%,rgba(255,255,255,.08),transparent 60%),
+             rgba(255,255,255,.04);
+  border:1px dashed rgba(255,255,255,.3);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+}
+.why-art .icon{font-size:4rem;}
+.why-art .cap{color:rgba(255,255,255,.5);font-size:.78rem;font-weight:600;text-align:center;padding:0 20px;}
+.why-art img{width:100%;height:100%;object-fit:cover;display:block;}
+@media (max-width:900px){
+  .why-grid{grid-template-columns:1fr;}
+  .why-heading{text-align:center;}
+  .why-art{position:static;max-width:320px;margin:0 auto;order:-1;}
+}
 
 /* ---------- types of hypotheses ---------- */
 .types{background:var(--bg);}
-.types .eyebrow{display:block;text-align:center;margin-bottom:12px;}
-.types .h2{text-align:center;}
+.types-top{display:grid;grid-template-columns:1.3fr .7fr;gap:44px;align-items:center;margin-bottom:46px;}
+.types-copy .h2{text-align:left;}
 .types-sub{
-  max-width:680px;margin:20px auto 46px;text-align:center;color:var(--gray-700);font-size:1.05rem;
+  margin:20px 0 0;text-align:left;color:var(--gray-700);font-size:1.05rem;
+}
+.types-art{
+  aspect-ratio:3/4;border-radius:24px;overflow:hidden;
+  background:radial-gradient(circle at 60% 20%,rgba(227,28,121,.08),transparent 60%),#fff;
+  border:1px dashed var(--border);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+}
+.types-art .icon{font-size:4rem;}
+.types-art .cap{color:var(--gray-500);font-size:.78rem;font-weight:600;text-align:center;padding:0 20px;}
+.types-art img{width:100%;height:100%;object-fit:cover;display:block;}
+@media (max-width:860px){
+  .types-top{grid-template-columns:1fr;text-align:center;}
+  .types-copy .h2,.types-sub{text-align:center;}
+  .types-art{max-width:300px;margin:0 auto;}
 }
 .types-grid{
   display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
@@ -486,8 +515,9 @@ footer a{color:rgba(255,255,255,.85);}
 
 <!-- WHY -->
 <section class="why">
-  <div class="wrap">
-    <h2 class="h2 on-dark exact-case">ГИПОТЕЗЫ как инструмент РОСТА ДОХОДА</h2>
+  <div class="wrap why-grid">
+    <div class="why-copy">
+      <h2 class="h2 on-dark exact-case why-heading">ГИПОТЕЗЫ<br>как инструмент<br>РОСТА ДОХОДА</h2>
 
     <div class="flow">
       <div class="flow-step">Умение формировать и быстро проверять гипотезы – главный навык, позволяющий расти в доходе, особенно это актуально в кризис. Те, кто не меняет стратегии в новой реальности – быстро теряют свои позиции. Те, кто находит новые точки роста и внедряет их – растет.</div>
@@ -498,14 +528,21 @@ footer a{color:rgba(255,255,255,.85);}
       <div class="flow-arrow">↓</div>
       <a href="#price" class="btn btn-primary">Купить</a>
     </div>
+    </div>
+    <div class="why-art"><div class="icon">🧪</div><div class="cap">картинка «химичка» — вставлю, как только пришлёшь файлом</div></div>
   </div>
 </section>
 
 <!-- TYPES -->
 <section class="types" id="types">
   <div class="wrap">
-    <h2 class="h2">виды гипотез</h2>
-    <p class="types-sub">Какие гипотезы изучим и какие вопросы будем решать с их помощью:</p>
+    <div class="types-top">
+      <div class="types-copy">
+        <h2 class="h2">виды гипотез</h2>
+        <p class="types-sub">Какие гипотезы изучим и какие вопросы будем решать с их помощью:</p>
+      </div>
+      <div class="types-art"><div class="icon">🧪</div><div class="cap">картинка — вставлю, как только пришлёшь файлом</div></div>
+    </div>
 
     <div class="types-grid">
       <div class="type-card">
