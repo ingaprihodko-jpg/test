@@ -274,7 +274,7 @@ header{
 .flow .btn-primary{background:#fff;color:var(--pink);box-shadow:0 10px 24px rgba(0,0,0,.2);min-width:220px;}
 .why-art{
   position:sticky;top:100px;
-  aspect-ratio:1511/2000;border-radius:24px;overflow:hidden;padding:14px;
+  aspect-ratio:1511/2000;border-radius:24px;overflow:hidden;padding:14px 14px 0;
   background:radial-gradient(circle at 60% 20%,rgba(255,255,255,.1),transparent 60%),
              rgba(255,255,255,.04);
   display:flex;align-items:center;justify-content:center;
@@ -294,7 +294,7 @@ header{
   margin:20px 0 0;text-align:left;color:var(--gray-700);font-size:1.05rem;
 }
 .types-art{
-  aspect-ratio:853/1280;border-radius:24px;overflow:hidden;padding:14px;
+  aspect-ratio:853/1280;border-radius:24px;overflow:hidden;padding:14px 14px 0;
   background:radial-gradient(circle at 60% 20%,rgba(227,28,121,.08),transparent 60%),#fff;
   border:1px solid var(--border);
   display:flex;align-items:center;justify-content:center;
@@ -383,13 +383,13 @@ header{
 }
 .gift-copy p{color:var(--gray-700);font-size:1.02rem;line-height:1.7;margin-bottom:14px;}
 .gift-art{
-  border-radius:26px;overflow:hidden;padding:18px;
+  border-radius:26px;overflow:hidden;padding:18px 18px 0;
   background:radial-gradient(circle at 70% 30%,rgba(227,28,121,.14),transparent 55%),
              linear-gradient(160deg,#fbf6ea,#f3f6fb);
   border:1px solid var(--border);
   display:flex;align-items:center;justify-content:center;
 }
-.gift-art img{width:100%;height:100%;object-fit:contain;display:block;}
+.gift-art img{width:100%;height:100%;object-fit:contain;object-position:center bottom;display:block;}
 @media (max-width:860px){
   .gift-grid,.gift-grid.reverse{grid-template-columns:1fr;text-align:center;}
   .gift-grid.reverse .gift-copy{order:2;}
