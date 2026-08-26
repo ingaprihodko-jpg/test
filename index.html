@@ -263,8 +263,15 @@ header{
   font-size:.96rem;line-height:1.65;
   box-shadow:0 14px 30px rgba(0,0,0,.25);
 }
-.flow-arrow{color:var(--pink);font-size:1.6rem;line-height:1;padding:8px 0;}
-.flow .btn{margin-top:10px;align-self:flex-start;}
+.flow-arrow{
+  display:flex;align-items:center;justify-content:center;
+  width:38px;height:38px;margin:6px auto;
+  background:var(--pink);border-radius:50%;
+  box-shadow:0 6px 14px rgba(227,28,121,.4);
+}
+.flow-arrow svg{width:16px;height:16px;}
+.flow .btn{margin-top:14px;align-self:flex-start;}
+.flow .btn-primary{background:#fff;color:var(--pink);box-shadow:0 10px 24px rgba(0,0,0,.2);min-width:220px;}
 .why-art{
   position:sticky;top:100px;
   aspect-ratio:1511/2000;border-radius:24px;overflow:hidden;padding:14px;
@@ -517,11 +524,11 @@ footer a{color:rgba(255,255,255,.85);}
 
     <div class="flow">
       <div class="flow-step">Умение формировать и быстро проверять гипотезы – главный навык, позволяющий расти в доходе, особенно это актуально в кризис. Те, кто не меняет стратегии в новой реальности – быстро теряют свои позиции. Те, кто находит новые точки роста и внедряет их – растет.</div>
-      <div class="flow-arrow">↓</div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="flow-step">Тему разработки гипотез мы неслучайно запускаем именно сейчас, на старте нового бизнес-сезона. Период с сентября по декабрь – самый доходный для экспертов, и от того, как вы к нему подготовитесь, какие гипотезы разработаете и внедрите, напрямую зависит ваш доход в течение года.</div>
-      <div class="flow-arrow">↓</div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <div class="flow-step">На интенсиве вы пройдете полный путь управления гипотезами: узнаете, как их создавать, анализировать, а затем — как выбрать лучшую, внедрить и сделать драйвером своего роста. На практике вы вместе с Ольгой Грищенко разработаете гипотезы для роста вашего дохода в 2026–2027 годах.</div>
-      <div class="flow-arrow">↓</div>
+      <div class="flow-arrow"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9l6 6 6-6" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <a href="#price" class="btn btn-primary">Купить</a>
     </div>
     </div>
