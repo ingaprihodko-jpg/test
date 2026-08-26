@@ -450,7 +450,7 @@ header{
 .price-cost{display:flex;align-items:baseline;gap:12px;margin-bottom:20px;}
 .price-old{color:var(--gray-500);text-decoration:line-through;font-size:1.05rem;font-weight:600;}
 .price-new{color:var(--purple-900);font-size:1.9rem;font-weight:900;}
-.price-card .btn-primary{padding:13px 26px;font-size:.92rem;align-self:flex-start;}
+.price-card .btn-primary{align-self:flex-start;min-width:200px;}
 @media (max-width:860px){.price-grid{grid-template-columns:1fr;}}
 
 /* ---------- about ---------- */
@@ -481,9 +481,6 @@ header{
 .final .h2{margin-bottom:16px;}
 .final p{max-width:600px;margin:0 auto 30px;color:rgba(255,255,255,.8);font-size:1.05rem;}
 
-/* ---------- footer ---------- */
-footer{background:var(--purple-950);color:rgba(255,255,255,.6);padding:36px 20px;text-align:center;font-size:.85rem;}
-footer a{color:rgba(255,255,255,.85);}
 </style>
 </head>
 <body>
@@ -787,9 +784,6 @@ footer a{color:rgba(255,255,255,.85);}
   </div>
 </section>
 
-<footer>
-  <div>© 2026 Ольга Грищенко · Интенсив «Денежные гипотезы»</div>
-</footer>
 
 <script>
 document.getElementById('navToggle').addEventListener('click', function(){
